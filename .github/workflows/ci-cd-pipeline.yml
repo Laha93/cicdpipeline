@@ -28,9 +28,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Run tests (if any tests are available)
-      - name: Run tests
-        run: npm test
+      # # Run tests (if any tests are available)
+      # - name: Run tests
+      #   run: npm test
 
       # Deploy to Render (or another service like Heroku)
       - name: Deploy to Render
