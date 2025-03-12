@@ -34,7 +34,7 @@ jobs:
 
       # Deploy to Render (or another service like Heroku)
       - name: Deploy to Render
-        uses: render-examples/deploy-node@v1
+        uses: johnbeynon/render-deploy-action@v0.0.8
         with:
           render-token: 'rnd_NghBYNy6xdXCXaUS5mZhfmRvvQH9'
           service-id: 'srv-cv8t9apu0jms73a5kq4g'
