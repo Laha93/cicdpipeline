@@ -36,5 +36,5 @@ jobs:
       - name: Deploy to Render
         uses: render-examples/deploy-node@v1
         with:
-          render-token: ${{ secrets.RENDER_API_KEY }}
-          service-id: ${{ secrets.RENDER_SERVICE_ID }}
+          render-token: 'rnd_NghBYNy6xdXCXaUS5mZhfmRvvQH9'
+          service-id: 'srv-cv8t9apu0jms73a5kq4g'
