@@ -22,17 +22,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '23.9.0'  # You can adjust the Node.js version here
+          node-version: '23.9.0' 
 
       # Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # # Run tests (if any tests are available)
-      # - name: Run tests
-      #   run: npm test
-
-      # Deploy to Render (or another service like Heroku)
+     
+      # Deploy to Render 
       - name: Deploy to Render
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
