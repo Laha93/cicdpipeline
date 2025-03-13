@@ -83,17 +83,17 @@ app.get("/users-who-ordered", (req, res) => {
     rows: result.map(user => [user.id, user.name, user.email])
   });
 });
-
 // // All Who Made Bill Route
 app.get("/who-made-bill", (req, res) => {
-  const madeByList = [...new Set(orders.map(order => order.madeBy))]; // Get unique madeBy values
-  const result = madeByList.map(madeBy => ({ madeBy }));
-
-  res.json({
-    columns: ['Made By'],
-    rows: result.map(entry => [entry.madeBy])
+    const madeByList = [...new Set(orders.map(order => order.madeBy))]; // Get unique madeBy values
+    const result = madeByList.map(madeBy => ({ madeBy }));
+  
+    res.json({
+      columns: ['Made By'],
+      rows: result.map(entry => [entry.madeBy])
+    });
   });
-});
+  
 
 
 
